@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru ">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Calc</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+      <div class="wrapper__container">
+        <div class="calc-block">
+          <h1 class="title">Актульные курсы валют в Минске</h1>
+          <div class="calc-block__display">
+            <div class="calc-block__item">
+              <h3 class="calc-block__title">1 USD</h3>
+              <div class="currency" data-value="USD">--:--</div>
+            </div>
+            <div class="calc-block__item">
+              <h3 class="calc-block__title">1 EUR</h3>
+              <div class="currency" data-value="EUR">--:--</div>
+            </div>
+            <div class="calc-block__item">
+              <h3 class="calc-block__title">100 UAH</h3>
+              <div class="currency" data-value="UAH">--:--</div>
+            </div>
+          </div>
+          <div class="calc-block__row">
+            <div class="calc-block__col">
+              <span>Отдаю:</span>
+              <select disabled="" class="form-control" id="give-select-1">
+                <option value="BYN" selected="">BYN — Рубли</option>
+              </select>
+              <input class="calc-block__input" type="number" id="give-byn" name="give" value="100" autofocus>
+            </div>
+            <div class="calc-block__col">
+              <span>Получаю:</span>
+              <select id="select-1" class="form-control">
+                <option value="USD">USD — Доллар США</option>
+                <option value="EUR">EUR — Евро</option>
+                <option value="UAH">UAH — Гривна</option>
+              </select>
+              <input class="calc-block__input" type="number" id="get-input-1" name="get" disabled>
+            </div>
+          </div>
+
+          <div class="calc-block__row">
+            <div class="calc-block__col">
+              <span>Отдаю:</span>
+              <select disabled="" class="form-control" id="give-select-2">
+                <option value="BYN" selected="">USD — Доллар США</option>
+              </select>
+              <input class="calc-block__input" type="number" id="give-usd" name="give" value="100">
+            </div>
+            <div class="calc-block__col">
+              <span>Получаю:</span>
+              <select id="select-2" class="form-control">
+                <option value="BYN">BYN — Бел. Рубль</option>
+                <option value="UAH">UAH — Гривна</option>
+              </select>
+              <input class="calc-block__input" type="number" id="get-input-2" name="get" disabled>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="js/app.js" type="module"></script>
+</body>
+
+</html>
